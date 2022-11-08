@@ -1,0 +1,19 @@
+.until{
+    margin: 25px;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    padding: 1em;
+    background: #009586;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.45);
+    font-family: Georgia;
+}
+
+.until__component {
+    text-align: center;
+    background: #fff;
+    border: radius 5px;
+}
+
