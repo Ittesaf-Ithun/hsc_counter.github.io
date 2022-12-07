@@ -17,3 +17,26 @@ function activateCountdown(element, dateString) {
 } 
 
 activateCountdown(document.getElementById("myCountdown"), "2022-12-08")
+
+function displayFireworks() {
+  // create a canvas element to draw the fireworks on
+  var canvas = document.createElement('canvas');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  document.body.appendChild(canvas);
+
+  // create a fireworks display using the canvas
+  var fireworks = new Fireworks(canvas);
+
+  // start the fireworks display
+  fireworks.start();
+}
+
+// get the current date
+var currentDate = new Date();
+
+// check if the current date is December 8th
+if (currentDate.getMonth() === 11 && currentDate.getDate() === 8) {
+  // if it is, call the displayFireworks function
+  displayFireworks();
+}
